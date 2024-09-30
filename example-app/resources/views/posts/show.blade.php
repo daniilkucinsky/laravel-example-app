@@ -11,7 +11,7 @@
         <p>{{$singlepost->author}}</p>
         <p>{{$singlepost->title}}</p>
         <p>{{$singlepost->description}}</p>
-        <a href="/post">back</a>
+        <a href="/posts">back</a>
     </div>
 </body>
 </html>
