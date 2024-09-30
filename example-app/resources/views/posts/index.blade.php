@@ -12,9 +12,9 @@
         <li>
             Author :{{$post->author}}
             TItle :{{$post->title}}
-            Content :{{$post->description}}
+            Content :{{$post->description   }}
             
-
+            <a href="/posts/{{$post->id}}">show</a>
         </li>
     @endforeach
     </ul>
