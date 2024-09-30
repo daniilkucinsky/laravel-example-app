@@ -14,7 +14,7 @@
             TItle :{{$post->title}}
             Content :{{$post->description   }}
             
-            <a href="/posts/{{$post->id}}">show</a>
+            <a href="/posts/{{$post->id}}/show">show</a>
         </li>
     @endforeach
     </ul>
