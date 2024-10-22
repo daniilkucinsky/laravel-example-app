@@ -23,9 +23,16 @@ class PostController extends Controller
         return view ('posts.create');
     }
     public function store(Request $request){
-        \Log::debug($request);
-        return ("to be implemented");
+        
+        $data = [
+            'author' =>$request->author,
+            'title'=>$request->title,
+            'content'=>$request->content,
+        ];
+        \Log::debug($data);
+        Post::create($data);
     }
+   
     //majas izveidot jauno post iekartu datubaze
 
 }
